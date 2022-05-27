@@ -6,4 +6,6 @@ class Performance < ApplicationRecord
 
     has_many :members, dependent: :destroy
     has_many :artists, through: :members
+
+    has_many_attached: :images
 end

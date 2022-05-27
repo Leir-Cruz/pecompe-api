@@ -6,4 +6,6 @@ class Artist < ApplicationRecord
 
     has_many :members, dependent: :destroy
     has_many :performances, through: :members
+
+    has_one_attached: :image
 end
